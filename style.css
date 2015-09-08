@@ -909,18 +909,24 @@ a:hover, a:active {
   margin: 0.8em 1.8em 0 0;
   position: relative;
   display: inline-block;
+  transition: color .2s ease-in;
 }
-/* line 87, sass/site/primary/_posts-and-pages.scss */
+/* line 88, sass/site/primary/_posts-and-pages.scss */
 .tags-links a:nth-child(1) {
   margin-left: 0;
 }
-/* line 91, sass/site/primary/_posts-and-pages.scss */
+/* line 92, sass/site/primary/_posts-and-pages.scss */
+.tags-links a:hover {
+  color: white;
+}
+/* line 96, sass/site/primary/_posts-and-pages.scss */
 .tags-links a::before {
   content: '#';
   display: inline-block;
   padding-right: .2em;
+  color: rgba(0, 0, 0, 0.5);
 }
-/* line 97, sass/site/primary/_posts-and-pages.scss */
+/* line 103, sass/site/primary/_posts-and-pages.scss */
 .tags-links a::after {
   content: '';
   width: 0;

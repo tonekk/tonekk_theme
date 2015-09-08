@@ -16,7 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700|Raleway:400,100,200,300,500,600,700,800,900|Vollkorn:400,400italic,700,700italic|Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:700|Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
 <?php wp_head(); ?>
 </head>
