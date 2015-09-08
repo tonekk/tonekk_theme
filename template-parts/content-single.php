@@ -11,11 +11,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+    <div class="entry-meta">
+      <div class="entry-meta-inner">
+        <span class="entry-author-name">tonekk</span> schrieb
+        vor <?php tonekk_theme_posted_on(); ?>
+      </div>
+    </div>
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php tonekk_theme_posted_on(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

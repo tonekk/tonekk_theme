@@ -73,3 +73,37 @@
 .edit-link {
   float: right;
 }
+
+$triangleWidth: 14px;
+
+.tags-links {
+  a {
+    background: $color__background-tags;
+    padding: 4px 10px 4px 8px;
+    margin: 0.8em 1.8em 0 0;
+    position: relative;
+    display: inline-block;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &::before {
+      content: '#';
+      display: inline-block;
+      padding-right: .2em;
+    }
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: $triangleWidth 0 $triangleWidth $triangleWidth;
+      border-color: transparent transparent transparent $color__background-tags;
+      position: absolute;
+      top: 0;
+      right: -$triangleWidth;
+    }
+  }
+}
