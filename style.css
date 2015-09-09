@@ -973,6 +973,14 @@ a:hover, a:active {
   right: -14px;
 }
 
+/* line 132, sass/site/primary/_posts-and-pages.scss */
+.more-link {
+  display: block;
+  font-family: 'Raleway';
+  display: block;
+  margin-top: 1rem;
+}
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
