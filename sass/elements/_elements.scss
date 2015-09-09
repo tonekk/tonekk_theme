@@ -19,6 +19,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+  #content, .site-title {
+    padding: 0 1.5rem;
+  }
+}
+
 header#masthead {
   background: $color__background-header;
   font-family: 'Raleway';
@@ -34,6 +40,7 @@ header#masthead {
   @media screen and (max-width: 480px) {
     .site-title {
       font-size: 1rem;
+      padding: 2rem 1.5rem;
     }
   }
 

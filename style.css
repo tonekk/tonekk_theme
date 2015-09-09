@@ -415,13 +415,19 @@ body {
   margin: 0 auto;
 }
 
-/* line 22, sass/elements/_elements.scss */
+@media screen and (max-width: 480px) {
+  /* line 23, sass/elements/_elements.scss */
+  #content, .site-title {
+    padding: 0 1.5rem;
+  }
+}
+/* line 28, sass/elements/_elements.scss */
 header#masthead {
   background: #4c5c68;
   font-family: 'Raleway';
   margin-bottom: 3rem;
 }
-/* line 27, sass/elements/_elements.scss */
+/* line 33, sass/elements/_elements.scss */
 header#masthead .site-title {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -429,32 +435,33 @@ header#masthead .site-title {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 35, sass/elements/_elements.scss */
+  /* line 41, sass/elements/_elements.scss */
   header#masthead .site-title {
     font-size: 1rem;
+    padding: 2rem 1.5rem;
   }
 }
-/* line 40, sass/elements/_elements.scss */
+/* line 47, sass/elements/_elements.scss */
 header#masthead a {
   color: white !important;
 }
 
-/* line 45, sass/elements/_elements.scss */
+/* line 52, sass/elements/_elements.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 48, sass/elements/_elements.scss */
+/* line 55, sass/elements/_elements.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 54, sass/elements/_elements.scss */
+/* line 61, sass/elements/_elements.scss */
 a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 60, sass/elements/_elements.scss */
+/* line 67, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -494,7 +501,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 69, sass/elements/_elements.scss */
+/* line 76, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
