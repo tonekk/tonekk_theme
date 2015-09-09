@@ -409,43 +409,52 @@ body {
 
 /* line 15, sass/elements/_elements.scss */
 #content, .site-title {
-  max-width: 520px;
+  width: 560px;
+  max-width: 100%;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
-/* line 20, sass/elements/_elements.scss */
+/* line 22, sass/elements/_elements.scss */
 header#masthead {
   background: #4c5c68;
   font-family: 'Raleway';
   margin-bottom: 3rem;
 }
-/* line 25, sass/elements/_elements.scss */
+/* line 27, sass/elements/_elements.scss */
 header#masthead .site-title {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  padding: 2rem 0;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
-/* line 31, sass/elements/_elements.scss */
+@media screen and (max-width: 480px) {
+  /* line 35, sass/elements/_elements.scss */
+  header#masthead .site-title {
+    font-size: 1rem;
+  }
+}
+/* line 40, sass/elements/_elements.scss */
 header#masthead a {
   color: white !important;
 }
 
-/* line 36, sass/elements/_elements.scss */
+/* line 45, sass/elements/_elements.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 39, sass/elements/_elements.scss */
+/* line 48, sass/elements/_elements.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 45, sass/elements/_elements.scss */
+/* line 54, sass/elements/_elements.scss */
 a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 51, sass/elements/_elements.scss */
+/* line 60, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -485,7 +494,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 60, sass/elements/_elements.scss */
+/* line 69, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -845,64 +854,82 @@ a:hover, a:active {
 .entry-title {
   font-size: 2.2rem;
   font-family: 'Quicksand';
-  margin: 2rem 0 1rem;
+  margin: 2.5rem 0 1rem;
 }
 
-/* line 31, sass/site/primary/_posts-and-pages.scss */
+@media screen and (max-width: 560px) {
+  /* line 31, sass/site/primary/_posts-and-pages.scss */
+  .entry-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 36, sass/site/primary/_posts-and-pages.scss */
+  .entry-title {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 41, sass/site/primary/_posts-and-pages.scss */
+  .entry-title {
+    font-size: 1.7rem;
+  }
+}
+/* line 47, sass/site/primary/_posts-and-pages.scss */
 .sticky {
   display: block;
 }
 
-/* line 35, sass/site/primary/_posts-and-pages.scss */
+/* line 51, sass/site/primary/_posts-and-pages.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
-/* line 39, sass/site/primary/_posts-and-pages.scss */
+/* line 55, sass/site/primary/_posts-and-pages.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-/* line 44, sass/site/primary/_posts-and-pages.scss */
+/* line 60, sass/site/primary/_posts-and-pages.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 49, sass/site/primary/_posts-and-pages.scss */
+/* line 65, sass/site/primary/_posts-and-pages.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 55, sass/site/primary/_posts-and-pages.scss */
+/* line 71, sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 60, sass/site/primary/_posts-and-pages.scss */
+/* line 76, sass/site/primary/_posts-and-pages.scss */
 .entry-footer {
   font-family: 'Quicksand';
   font-size: 0.8rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 66, sass/site/primary/_posts-and-pages.scss */
+/* line 82, sass/site/primary/_posts-and-pages.scss */
 .entry-footer::after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* line 73, sass/site/primary/_posts-and-pages.scss */
+/* line 89, sass/site/primary/_posts-and-pages.scss */
 .edit-link {
   float: right;
 }
 
-/* line 80, sass/site/primary/_posts-and-pages.scss */
+/* line 96, sass/site/primary/_posts-and-pages.scss */
 .tags-links a {
   background: #c5ced5;
   padding: 4px 10px 4px 8px;
@@ -911,22 +938,22 @@ a:hover, a:active {
   display: inline-block;
   transition: color .2s ease-in;
 }
-/* line 88, sass/site/primary/_posts-and-pages.scss */
+/* line 104, sass/site/primary/_posts-and-pages.scss */
 .tags-links a:nth-child(1) {
   margin-left: 0;
 }
-/* line 92, sass/site/primary/_posts-and-pages.scss */
+/* line 108, sass/site/primary/_posts-and-pages.scss */
 .tags-links a:hover {
   color: white;
 }
-/* line 96, sass/site/primary/_posts-and-pages.scss */
+/* line 112, sass/site/primary/_posts-and-pages.scss */
 .tags-links a::before {
   content: '#';
   display: inline-block;
   padding-right: .2em;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 103, sass/site/primary/_posts-and-pages.scss */
+/* line 119, sass/site/primary/_posts-and-pages.scss */
 .tags-links a::after {
   content: '';
   width: 0;
