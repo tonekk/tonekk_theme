@@ -135,21 +135,27 @@ header#masthead a {
 }
 
 /* line 52, sass/_base.sass */
+#footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* line 56, sass/_base.sass */
 blockquote, q {
   quotes: "" "";
 }
-/* line 55, sass/_base.sass */
+/* line 59, sass/_base.sass */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 59, sass/_base.sass */
+/* line 63, sass/_base.sass */
 a {
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 63, sass/_base.sass */
+/* line 67, sass/_base.sass */
 hr {
   background-color: #ccc;
   border: 0;
@@ -157,60 +163,60 @@ hr {
   margin-bottom: 1.5em;
 }
 
-/* line 70, sass/_base.sass */
+/* line 74, sass/_base.sass */
 a {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 73, sass/_base.sass */
+/* line 77, sass/_base.sass */
 a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 76, sass/_base.sass */
+/* line 80, sass/_base.sass */
 a:hover, a:focus, a:active {
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 81, sass/_base.sass */
+/* line 85, sass/_base.sass */
 a:focus {
   outline: thin dotted;
 }
-/* line 84, sass/_base.sass */
+/* line 88, sass/_base.sass */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 91, sass/_base.sass */
+/* line 95, sass/_base.sass */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 94, sass/_base.sass */
+/* line 98, sass/_base.sass */
 ul {
   list-style: disc;
 }
 
-/* line 97, sass/_base.sass */
+/* line 101, sass/_base.sass */
 ol {
   list-style: decimal;
 }
 
-/* line 100, sass/_base.sass */
+/* line 104, sass/_base.sass */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 105, sass/_base.sass */
+/* line 109, sass/_base.sass */
 dt {
   font-weight: bold;
 }
 
-/* line 108, sass/_base.sass */
+/* line 112, sass/_base.sass */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 111, sass/_base.sass */
+/* line 115, sass/_base.sass */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -218,33 +224,33 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 121, sass/_base.sass */
+/* line 125, sass/_base.sass */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 127, sass/_base.sass */
+/* line 131, sass/_base.sass */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 130, sass/_base.sass */
+/* line 134, sass/_base.sass */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 133, sass/_base.sass */
+/* line 137, sass/_base.sass */
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 136, sass/_base.sass */
+/* line 140, sass/_base.sass */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 139, sass/_base.sass */
+/* line 143, sass/_base.sass */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -257,33 +263,32 @@ pre {
   padding: 1.6em;
 }
 
-/* line 151, sass/_base.sass */
+/* line 155, sass/_base.sass */
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
 
-/* line 156, sass/_base.sass */
+/* line 160, sass/_base.sass */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 160, sass/_base.sass */
+/* line 164, sass/_base.sass */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 164, sass/_base.sass */
+/* line 168, sass/_base.sass */
 big {
   font-size: 125%;
 }
 
 /* line 1, sass/_layout.sass */
 #content, .site-title {
-  width: 560px;
   max-width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
@@ -295,16 +300,32 @@ big {
   }
 }
 
-/* line 10, sass/_layout.sass */
+/* line 9, sass/_layout.sass */
 #site-navigation {
   display: none;
 }
 
+/* line 12, sass/_layout.sass */
+#footer {
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* line 1, sass/modules/_posts.sass */
+.post {
+  width: 560px;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto 8em;
+}
+
+/* line 7, sass/modules/_posts.sass */
 .entry-meta {
   font-family: "Quicksand";
 }
-/* line 4, sass/modules/_posts.sass */
+/* line 10, sass/modules/_posts.sass */
 .entry-meta::before {
   content: "";
   height: 2.8em;
@@ -317,93 +338,88 @@ big {
   margin-right: 0.4em;
 }
 
-/* line 15, sass/modules/_posts.sass */
+/* line 21, sass/modules/_posts.sass */
 .entry-meta-inner {
   display: inline-block;
   vertical-align: middle;
   max-width: 120px;
 }
 
-/* line 20, sass/modules/_posts.sass */
+/* line 26, sass/modules/_posts.sass */
 .entry-title {
   font-size: 2.2rem;
   font-family: "Quicksand";
   margin: 2.5rem 0 1rem;
 }
 @media screen and (max-width: 560px) {
-  /* line 20, sass/modules/_posts.sass */
+  /* line 26, sass/modules/_posts.sass */
   .entry-title {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 20, sass/modules/_posts.sass */
+  /* line 26, sass/modules/_posts.sass */
   .entry-title {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 20, sass/modules/_posts.sass */
+  /* line 26, sass/modules/_posts.sass */
   .entry-title {
     font-size: 1.7rem;
   }
 }
 
-/* line 34, sass/modules/_posts.sass */
+/* line 40, sass/modules/_posts.sass */
 .sticky {
   display: block;
 }
 
-/* line 37, sass/modules/_posts.sass */
-.hentry {
-  margin: 0 0 1.5em;
-}
-
-/* line 40, sass/modules/_posts.sass */
+/* line 43, sass/modules/_posts.sass */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-/* line 44, sass/modules/_posts.sass */
+/* line 47, sass/modules/_posts.sass */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 48, sass/modules/_posts.sass */
+/* line 51, sass/modules/_posts.sass */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 53, sass/modules/_posts.sass */
+/* line 56, sass/modules/_posts.sass */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 57, sass/modules/_posts.sass */
+/* line 60, sass/modules/_posts.sass */
 .entry-footer {
   font-family: "Quicksand";
   font-size: 0.8rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 63, sass/modules/_posts.sass */
+/* line 66, sass/modules/_posts.sass */
 .entry-footer::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 68, sass/modules/_posts.sass */
+/* line 71, sass/modules/_posts.sass */
 .edit-link {
   float: right;
 }
 
-/* line 74, sass/modules/_posts.sass */
+/* line 77, sass/modules/_posts.sass */
 .tags-links a {
   background: #c5ced5;
   padding: 4px 10px 4px 8px;
@@ -412,22 +428,22 @@ big {
   display: inline-block;
   transition: color 0.2s ease-in;
 }
-/* line 82, sass/modules/_posts.sass */
+/* line 85, sass/modules/_posts.sass */
 .tags-links a:nth-child(1) {
   margin-left: 0;
 }
-/* line 85, sass/modules/_posts.sass */
+/* line 88, sass/modules/_posts.sass */
 .tags-links a:hover {
   color: white;
 }
-/* line 88, sass/modules/_posts.sass */
+/* line 91, sass/modules/_posts.sass */
 .tags-links a::before {
   content: "#";
   display: inline-block;
   padding-right: 0.2em;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 94, sass/modules/_posts.sass */
+/* line 97, sass/modules/_posts.sass */
 .tags-links a::after {
   content: "";
   width: 0;
@@ -440,7 +456,7 @@ big {
   right: -14px;
 }
 
-/* line 105, sass/modules/_posts.sass */
+/* line 108, sass/modules/_posts.sass */
 .more-link {
   display: block;
   font-family: "Raleway";
@@ -449,123 +465,29 @@ big {
 }
 
 /* line 1, sass/modules/_navigation.sass */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
+.navigation {
   width: 100%;
-}
-/* line 7, sass/modules/_navigation.sass */
-.main-navigation ul {
-  display: none;
-  list-style: none;
   margin: 0;
-  padding-left: 0;
+}
+/* line 5, sass/modules/_navigation.sass */
+.navigation ul.navigation-elements {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 /* line 13, sass/modules/_navigation.sass */
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 1.5em;
-  left: -999em;
-  z-index: 99999;
+.navigation ul.navigation-elements li {
+  display: inline-block;
+  margin: 2em;
 }
-/* line 21, sass/modules/_navigation.sass */
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-/* line 26, sass/modules/_navigation.sass */
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  left: 100%;
-}
-/* line 30, sass/modules/_navigation.sass */
-.main-navigation ul ul a {
-  width: 200px;
-}
-/* line 39, sass/modules/_navigation.sass */
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto;
-}
-/* line 43, sass/modules/_navigation.sass */
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-/* line 50, sass/modules/_navigation.sass */
-.main-navigation a {
-  display: block;
-  text-decoration: none;
-}
-
-/* Small menu. */
-/* line 59, sass/modules/_navigation.sass */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-  /* line 64, sass/modules/_navigation.sass */
-  .menu-toggle {
-    display: none;
-  }
-
-  /* line 67, sass/modules/_navigation.sass */
-  .main-navigation ul {
-    display: block;
-  }
-}
-/* line 73, sass/modules/_navigation.sass */
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden;
-}
-/* line 77, sass/modules/_navigation.sass */
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%;
-}
-/* line 81, sass/modules/_navigation.sass */
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
-}
-
-/* line 1, sass/modules/_utilities.sass */
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-  content: "";
-  display: table;
-}
-
-/* line 15, sass/modules/_utilities.sass */
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-  clear: both;
+/* line 17, sass/modules/_navigation.sass */
+.navigation ul.navigation-elements li a {
+  padding: 2em;
+  color: white;
+  font-family: "Quicksand";
 }
 
 /* line 5, sass/_modules.sass */
@@ -574,6 +496,57 @@ big {
 }
 
 /* line 8, sass/_modules.sass */
+.archive {
+  margin: 0 auto;
+  width: 560px;
+  max-width: 100%;
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+/* line 16, sass/_modules.sass */
+.archive-line {
+  border-top: 2px dashed rgba(0, 0, 0, 0.8);
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+/* line 21, sass/_modules.sass */
+.archive-title {
+  font-size: 2.2em;
+  margin: 0.67em 0;
+  font-family: "Raleway";
+  letter-spacing: 0.08em;
+}
+
+/* line 27, sass/_modules.sass */
 .archive-entry-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  border-bottom: 1px solid;
+  border-width: 4px;
+  padding-bottom: 0.2em;
+  transition: all 0.2s ease-in;
+}
+/* line 37, sass/_modules.sass */
+.archive-entry-title:hover a {
+  background: black;
+  color: white;
+}
+/* line 41, sass/_modules.sass */
+.archive-entry-title a {
+  transition: all 0.3s ease-in;
+  padding: 0.2em;
+}
+/* line 45, sass/_modules.sass */
+.archive-entry-title:nth-of-type(1) {
+  display: none;
+}
+
+/* line 48, sass/_modules.sass */
+.footer-inner {
+  width: 560px;
+  margin: 0 auto;
 }

@@ -5,5 +5,46 @@
 .skip-link
   display: none
 
+.archive
+  margin: 0 auto
+  width: $size__site-main
+  max-width: 100%
+  position: relative
+  margin-top: 3em
+  margin-bottom: 3em
+
+.archive-line
+  border-top: 2px dashed $color__text-main
+  margin-top: 5em
+  margin-bottom: 5em
+
+.archive-title
+  font-size: 2.2em
+  margin: .67em 0
+  font-family: 'Raleway'
+  letter-spacing: .08em
+
 .archive-entry-title
-  font-size: 1.5em
+  font-size: 1.2em
+  text-transform: uppercase
+  font-family: 'Raleway'
+  border-bottom: 1px solid
+  border-width: 4px
+  padding-bottom: .2em
+  transition: all .2s ease-in
+
+  &:hover
+    a
+      background: black
+      color: white
+
+  a
+    transition: all .3s ease-in
+    padding: .2em
+
+  &:nth-of-type(1)
+    display: none
+
+.footer-inner
+  width: $size__site-main
+  margin: 0 auto

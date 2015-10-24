@@ -19,6 +19,8 @@
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:700|Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
 <?php wp_head(); ?>
 </head>
 

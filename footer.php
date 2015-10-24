@@ -13,10 +13,17 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="navigation">
+        <ul class="navigation-elements">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Links</a></li>
+        </ul>
+      </div><!-- .site-info -->
+    </div>
+  </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
