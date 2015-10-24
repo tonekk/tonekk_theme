@@ -1,0 +1,166 @@
+@import base/forms
+
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+  box-sizing: inherit
+
+body
+  background: $color__background-body
+
+body,
+button,
+input,
+select,
+textarea
+  color: $color__text-main
+  font-family: $font__main
+
+  +font-size(1)
+
+  line-height: $font__line-height-body
+
+a
+  color: $color__text-main
+  text-decoration: none
+
+  /* Fallback for when there is no custom background color defined.
+
+header#masthead
+  background: $color__background-header
+  font-family: 'Raleway'
+  margin-bottom: 3rem
+
+  .site-title
+    text-transform: uppercase
+    letter-spacing: 0.3rem
+    padding: 2rem
+    font-size: 1.5rem
+
+  @media screen and (max-width: 480px)
+    .site-title
+      font-size: 1rem
+      padding: 2rem 1.5rem
+
+  a
+    color: white !important
+
+blockquote, q
+  quotes: "" ""
+
+  &:before,
+  &:after
+    content: ""
+
+a
+  text-decoration: none
+  font-weight: bold
+
+hr
+  background-color: $color__background-hr
+  border: 0
+  height: 1px
+  margin-bottom: 1.5em
+
+// links
+a
+  color: $color__link
+
+  &:visited
+    color: $color__link-visited
+
+  &:hover,
+  &:focus,
+  &:active
+    color: $color__link-hover
+
+  &:focus
+    outline: thin dotted
+
+  &:hover,
+  &:active
+    outline: 0
+
+
+// Lists
+
+ul, ol
+  margin: 0 0 1.5em 3em
+
+ul
+  list-style: disc
+
+ol
+  list-style: decimal
+
+li > ul,
+li > ol
+  margin-bottom: 0
+  margin-left: 1.5em
+
+dt
+  font-weight: bold
+
+dd
+  margin: 0 1.5em 1.5em
+
+img
+  height: auto
+
+  /* Make sure images are scaled correctly.
+  max-width: 100%
+
+  /* Adhere to container width.
+
+
+// tables
+table
+  margin: 0 0 1.5em
+  width: 100%
+
+
+// paragraphs
+p
+  margin-bottom: 1.5em
+
+dfn, cite, em, i
+  font-style: italic
+
+blockquote
+  margin: 0 1.5em
+
+address
+  margin: 0 0 1.5em
+
+pre
+  background: $color__background-pre
+  font-family: $font__pre
+
+  +font-size(0.9375)
+
+  line-height: $font__line-height-pre
+  margin-bottom: 1.6em
+  max-width: 100%
+  overflow: auto
+  padding: 1.6em
+
+code, kbd, tt, var
+  font-family: $font__code
+
+  +font-size(0.9375)
+
+abbr, acronym
+  border-bottom: 1px dotted $color__border-abbr
+  cursor: help
+
+mark, ins
+  background: $color__background-ins
+  text-decoration: none
+
+big
+  font-size: 125%
+
