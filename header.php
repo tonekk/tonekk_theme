@@ -18,6 +18,10 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:700|Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Google Analytics Opt-Out -->
+<script>
+function gaOptout(){document.cookie=disableStr+"=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/",window[disableStr]=!0}var gaProperty="UA-69074746-1",disableStr="ga-disable-"+gaProperty;document.cookie.indexOf(disableStr+"=true")>-1&&(window[disableStr]=!0);
+</script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 
