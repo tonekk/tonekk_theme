@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-  <footer id="footer" class="site-footer" role="contentinfo">
+  <footer id="footer" class="site-footer main-footer" role="contentinfo">
     <div class="footer-inner">
       <div class="navigation">
         <ul class="navigation-elements">

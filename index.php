@@ -32,15 +32,9 @@ get_header(); ?>
       endwhile;
     ?>
 
-    <div class="archive-line"></div>
-    <div class="archive">
-
-      <h1 class="archive-title">Archive</h1>
-
-      <?php while ( have_posts() ) : the_post(); ?>
-        <?php the_title( sprintf( '<h2 class="archive-entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-      <?php endwhile; ?>
-    </div>
+    <?php
+      get_template_part( 'template-parts/archive');
+    ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->

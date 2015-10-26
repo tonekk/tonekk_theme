@@ -1,35 +1,77 @@
 @import modules/posts
 @import modules/navigation
 @import modules/utilities
+@import modules/archive
 
 .skip-link
   display: none
 
-.archive
-  margin: 0 auto
+.footer-inner
   width: $size__site-main
+  margin: 0 auto
   max-width: 100%
-  position: relative
-  margin-top: 3em
-  margin-bottom: 3em
+  padding: 2em
 
-.archive-line
-  border-top: 2px dashed $color__text-main
-  margin-top: 5em
-  margin-bottom: 5em
+.heading
+  font-size: 1.8rem
+  font-family: "Raleway"
+  margin: 2.5rem 0 1rem
+  background: black
+  color: white
+  text-transform: uppercase
+  padding: 0 0.2em
 
-.archive-title
-  font-size: 2.2em
-  margin: .67em 0
+  @media screen and (max-width: 480px)
+    font-size: 1.7em
+
+  @media screen and (max-width: 400px)
+    font-size: 1.6em
+
+  & > a
+    color: white
+
+section.error-404
+  width: $size__site-main
+  margin: 0 auto
+  max-width: 100%
+
+.main-footer
+  background: $color__text-main
+  color: white
+
+.main-header
+  background: $color__background-header
   font-family: 'Raleway'
-  letter-spacing: .08em
+  margin-bottom: 3rem
+  border-bottom: 1px solid darken($color__background-header, 10)
 
-.archive-entry-title
+  .site-branding
+    width: $size__site-main
+    margin: 0 auto
+    padding: 0 2rem
+    max-width: 100%
+    box-sizing: content-box
+
+  .site-title
+    text-transform: uppercase
+    letter-spacing: 0.3rem
+    padding: 2rem 0
+    font-size: 1.5rem
+
+    @media screen and (max-width: 480px)
+      font-size: 1.4rem
+
+    @media screen and (max-width: 400px)
+      font-size: 1.2rem
+
+  a
+    color: white !important
+
+.underlined-title
   font-size: 1.2em
   text-transform: uppercase
   font-family: 'Raleway'
-  border-bottom: 1px solid
-  border-width: 4px
+  border-bottom: 4px solid black
   padding-bottom: .2em
   transition: all .2s ease-in
 
@@ -42,9 +84,5 @@
     transition: all .3s ease-in
     padding: .2em
 
-  &:nth-of-type(1)
-    display: none
-
-.footer-inner
-  width: $size__site-main
-  margin: 0 auto
+.goto-home
+  text-align: right

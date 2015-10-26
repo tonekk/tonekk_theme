@@ -20,28 +20,17 @@
       </div>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="heading"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'tonekk_theme' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tonekk_theme' ),
-				'after'  => '</div>',
-			) );
-		?>
+      <?php the_content('', true) ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php tonekk_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+  <div class="read-more">
+		<?php
+      print '<a class="more-link" href="'. get_permalink($post->ID) . '">Weiterlesen</a>';
+		?>
+  </div>
 </article><!-- #post-## -->
