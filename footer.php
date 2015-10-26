@@ -17,9 +17,9 @@
     <div class="footer-inner">
       <div class="navigation">
         <ul class="navigation-elements">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Links</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/disclaimer">Disclaimer</a></li>
+          <li><a href="/links">Links</a></li>
         </ul>
       </div><!-- .site-info -->
     </div>

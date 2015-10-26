@@ -6,12 +6,6 @@
 .skip-link
   display: none
 
-.footer-inner
-  width: $size__site-main
-  margin: 0 auto
-  max-width: 100%
-  padding: 2em
-
 .heading
   font-size: 1.8rem
   font-family: "Raleway"
@@ -39,6 +33,9 @@ section.error-404
   background: $color__text-main
   color: white
 
+.footer-inner
+  +size-and-center
+
 .main-header
   background: $color__background-header
   font-family: 'Raleway'
@@ -46,11 +43,7 @@ section.error-404
   border-bottom: 1px solid darken($color__background-header, 10)
 
   .site-branding
-    width: $size__site-main
-    margin: 0 auto
-    padding: 0 2rem
-    max-width: 100%
-    box-sizing: content-box
+    +size-and-center
 
   .site-title
     text-transform: uppercase
