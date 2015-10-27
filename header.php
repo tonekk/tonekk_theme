@@ -14,6 +14,17 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Reflexionen eines Menschen. Blog minus fancy">
+<meta name="author" content="Finn Tonekk">
+<meta name="keywords" content="reflexion,berlin,hip-hop,hate,review,essay,street,techno,club,behindert,keywords,sind,google,egal,mert,babak,420,joint,bong,obama,merkel,crime">
+
+<meta name="og:title" content="tonekk schreibt">
+<meta name="og:type" content="website">
+<meta name="og:url" content="http://tonekk.de'">
+<meta name="og:image" content="http://tonekk.de/wp-content/uploads/2015/10/tonekk.png">
+<meta name="og:description" content="Reflexionen eines Menschen. Blog minus fancy">
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:700|Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
