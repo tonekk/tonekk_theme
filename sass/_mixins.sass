@@ -21,6 +21,8 @@
 =size-and-center
   width: $size__site-main
   margin: 0 auto
-  padding: 0 2rem
+  padding: 0
   max-width: 100%
-  box-sizing: content-box
+
+  @media screen and (max-width: $size__site-main + 64px)
+    padding: 0 2rem

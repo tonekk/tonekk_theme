@@ -27,15 +27,26 @@ p::selection
   font-family: 'Quicksand'
 
   &::before
-    content: ''
-    height: 2.8em
+    content: "to"
+    line-height: 2.8rem
+    height: 2.8rem
     display: inline-block
     background-color: $color__background-header
-    width: 2.8em
+    color: $color__background-header
+    width: 2.8rem
     position: relative
     border-radius: 50%
     vertical-align: middle
-    margin-right: .4em
+    margin-right: 0.4em
+    transition: color 1s ease-in-out
+    text-align: center
+    font-size: 1.5em
+
+body.home, body.archive
+  .entry-meta
+    &:hover
+      &::before
+        color: black
 
 .entry-meta-inner
   display: inline-block

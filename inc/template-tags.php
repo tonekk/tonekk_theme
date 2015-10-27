@@ -13,8 +13,7 @@ if ( ! function_exists( 'tonekk_theme_posted_on' ) ) :
  */
 function tonekk_theme_posted_on() {
   $posted_on = sprintf(
-    esc_html_x( '%s', 'post date', 'tonekk_theme' ),
-    '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . human_time_diff( get_post_time('U'), current_time('timestamp') ) . '</a>'
+    esc_html_x( '%s', 'post date', 'tonekk_theme' ), human_time_diff( get_post_time('U'), current_time('timestamp') )
   );
 
   echo $posted_on;
