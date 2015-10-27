@@ -307,35 +307,40 @@ article.post, article.page {
 }
 
 /* line 7, sass/modules/_posts.sass */
+article.page {
+  margin: 0 auto 4em;
+}
+
+/* line 10, sass/modules/_posts.sass */
 p::selection {
   background: red;
 }
 
-/* line 12, sass/modules/_posts.sass */
+/* line 15, sass/modules/_posts.sass */
 .entry-content *::selection {
   background: #a6cff9;
 }
-/* line 14, sass/modules/_posts.sass */
+/* line 17, sass/modules/_posts.sass */
 .entry-content *::-moz-selection {
   background: #a6cff9;
 }
-/* line 17, sass/modules/_posts.sass */
+/* line 20, sass/modules/_posts.sass */
 .entry-content a:not(.more-link) {
   border-bottom: 3px solid #a6cff9;
   box-shadow: inset 0 -5px 0 #a6cff9;
   transition: all 0.35s ease-in;
 }
-/* line 22, sass/modules/_posts.sass */
+/* line 25, sass/modules/_posts.sass */
 .entry-content a:not(.more-link):hover {
   background: #a6cff9;
   border-width: 0;
 }
 
-/* line 26, sass/modules/_posts.sass */
+/* line 29, sass/modules/_posts.sass */
 .entry-meta {
   font-family: "Quicksand";
 }
-/* line 29, sass/modules/_posts.sass */
+/* line 32, sass/modules/_posts.sass */
 .entry-meta::before {
   content: "to";
   line-height: 2.8rem;
@@ -353,74 +358,74 @@ p::selection {
   font-size: 1.5em;
 }
 
-/* line 48, sass/modules/_posts.sass */
+/* line 51, sass/modules/_posts.sass */
 body.home .entry-meta:hover::before, body.archive .entry-meta:hover::before {
   color: black;
 }
 
-/* line 51, sass/modules/_posts.sass */
+/* line 54, sass/modules/_posts.sass */
 .entry-meta-inner {
   display: inline-block;
   vertical-align: middle;
   max-width: 120px;
 }
 
-/* line 56, sass/modules/_posts.sass */
+/* line 59, sass/modules/_posts.sass */
 .entry-title, .page-title {
   font-size: 2.2rem;
   font-family: "Quicksand";
   margin: 2.5rem 0 1rem;
 }
 @media screen and (max-width: 560px) {
-  /* line 56, sass/modules/_posts.sass */
+  /* line 59, sass/modules/_posts.sass */
   .entry-title, .page-title {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 56, sass/modules/_posts.sass */
+  /* line 59, sass/modules/_posts.sass */
   .entry-title, .page-title {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 56, sass/modules/_posts.sass */
+  /* line 59, sass/modules/_posts.sass */
   .entry-title, .page-title {
     font-size: 1.7rem;
   }
 }
 
-/* line 70, sass/modules/_posts.sass */
+/* line 73, sass/modules/_posts.sass */
 .sticky {
   display: block;
 }
 
-/* line 73, sass/modules/_posts.sass */
+/* line 76, sass/modules/_posts.sass */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-/* line 77, sass/modules/_posts.sass */
+/* line 80, sass/modules/_posts.sass */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 81, sass/modules/_posts.sass */
+/* line 84, sass/modules/_posts.sass */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 86, sass/modules/_posts.sass */
+/* line 89, sass/modules/_posts.sass */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 90, sass/modules/_posts.sass */
+/* line 93, sass/modules/_posts.sass */
 .entry-footer {
   font-family: "Quicksand";
   font-size: 0.8rem;
@@ -428,19 +433,19 @@ body.home .entry-meta:hover::before, body.archive .entry-meta:hover::before {
   margin-top: 0.2em;
   border-top: 4px solid black;
 }
-/* line 97, sass/modules/_posts.sass */
+/* line 100, sass/modules/_posts.sass */
 .entry-footer::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 102, sass/modules/_posts.sass */
+/* line 105, sass/modules/_posts.sass */
 .edit-link {
   float: right;
 }
 
-/* line 108, sass/modules/_posts.sass */
+/* line 111, sass/modules/_posts.sass */
 .tags-links a {
   background: #c7e1fb;
   padding: 4px 10px 4px 8px;
@@ -449,27 +454,27 @@ body.home .entry-meta:hover::before, body.archive .entry-meta:hover::before {
   display: inline-block;
   transition: color, background-color 0.2s ease-in;
 }
-/* line 116, sass/modules/_posts.sass */
+/* line 119, sass/modules/_posts.sass */
 .tags-links a:nth-child(1) {
   margin-left: 0;
 }
-/* line 119, sass/modules/_posts.sass */
+/* line 122, sass/modules/_posts.sass */
 .tags-links a:hover {
   color: white;
   background: #b0d4fa;
 }
-/* line 123, sass/modules/_posts.sass */
+/* line 126, sass/modules/_posts.sass */
 .tags-links a:hover::after {
   border-color: transparent transparent transparent #b0d4fa;
 }
-/* line 126, sass/modules/_posts.sass */
+/* line 129, sass/modules/_posts.sass */
 .tags-links a::before {
   content: "#";
   display: inline-block;
   padding-right: 0.2em;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 132, sass/modules/_posts.sass */
+/* line 135, sass/modules/_posts.sass */
 .tags-links a::after {
   transition: border-color 0.2s ease-in;
   content: "";
@@ -483,13 +488,13 @@ body.home .entry-meta:hover::before, body.archive .entry-meta:hover::before {
   right: -14px;
 }
 
-/* line 144, sass/modules/_posts.sass */
+/* line 147, sass/modules/_posts.sass */
 .read-more {
   border-bottom: 4px solid black;
   text-align: right;
 }
 
-/* line 148, sass/modules/_posts.sass */
+/* line 151, sass/modules/_posts.sass */
 .more-link {
   font-size: 1.2em;
   text-transform: uppercase;
@@ -499,7 +504,7 @@ body.home .entry-meta:hover::before, body.archive .entry-meta:hover::before {
   padding: 0.2em;
   text-align: right;
 }
-/* line 157, sass/modules/_posts.sass */
+/* line 160, sass/modules/_posts.sass */
 .more-link:hover {
   background: black;
   color: white;
@@ -607,19 +612,24 @@ body.home .entry-meta:hover::before, body.archive .entry-meta:hover::before {
 }
 
 /* line 27, sass/_modules.sass */
+.page-heading {
+  margin: 0 0 1rem;
+}
+
+/* line 30, sass/_modules.sass */
 section.error-404 {
   width: 560px;
   margin: 0 auto;
   max-width: 100%;
 }
 
-/* line 32, sass/_modules.sass */
+/* line 35, sass/_modules.sass */
 .main-footer {
   background: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
-/* line 36, sass/_modules.sass */
+/* line 39, sass/_modules.sass */
 .footer-inner {
   width: 560px;
   margin: 0 auto;
@@ -627,20 +637,20 @@ section.error-404 {
   max-width: 100%;
 }
 @media screen and (max-width: 624px) {
-  /* line 36, sass/_modules.sass */
+  /* line 39, sass/_modules.sass */
   .footer-inner {
     padding: 0 2rem;
   }
 }
 
-/* line 39, sass/_modules.sass */
+/* line 42, sass/_modules.sass */
 .main-header {
   background: #44BBA4;
   font-family: "Raleway";
   margin-bottom: 3rem;
   border-bottom: 1px solid #369683;
 }
-/* line 45, sass/_modules.sass */
+/* line 48, sass/_modules.sass */
 .main-header .site-branding {
   width: 560px;
   margin: 0 auto;
@@ -648,12 +658,12 @@ section.error-404 {
   max-width: 100%;
 }
 @media screen and (max-width: 624px) {
-  /* line 45, sass/_modules.sass */
+  /* line 48, sass/_modules.sass */
   .main-header .site-branding {
     padding: 0 2rem;
   }
 }
-/* line 48, sass/_modules.sass */
+/* line 51, sass/_modules.sass */
 .main-header .site-title {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -661,23 +671,23 @@ section.error-404 {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 48, sass/_modules.sass */
+  /* line 51, sass/_modules.sass */
   .main-header .site-title {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 48, sass/_modules.sass */
+  /* line 51, sass/_modules.sass */
   .main-header .site-title {
     font-size: 1.2rem;
   }
 }
-/* line 60, sass/_modules.sass */
+/* line 63, sass/_modules.sass */
 .main-header a {
   color: white !important;
 }
 
-/* line 63, sass/_modules.sass */
+/* line 66, sass/_modules.sass */
 .underlined-title {
   font-size: 1.2em;
   text-transform: uppercase;
@@ -686,18 +696,18 @@ section.error-404 {
   padding-bottom: 0.2em;
   transition: all 0.2s ease-in;
 }
-/* line 72, sass/_modules.sass */
+/* line 75, sass/_modules.sass */
 .underlined-title:hover a {
   background: black;
   color: white;
 }
-/* line 76, sass/_modules.sass */
+/* line 79, sass/_modules.sass */
 .underlined-title a {
   transition: all 0.3s ease-in;
   padding: 0.2em;
 }
 
-/* line 80, sass/_modules.sass */
+/* line 83, sass/_modules.sass */
 .goto-home {
   text-align: right;
 }

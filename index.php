@@ -26,6 +26,7 @@ get_header(); ?>
 
 
     <?php
+      // Show most recent post
       $recentPost = new WP_Query('showposts=1');
       while ( $recentPost->have_posts() ) : $recentPost->the_post();
         get_template_part( 'template-parts/content', get_post_format() );
@@ -33,11 +34,11 @@ get_header(); ?>
     ?>
 
     <?php
+      // Show all other posts in archive
       get_template_part( 'template-parts/archive');
     ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
